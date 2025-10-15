@@ -20,9 +20,9 @@ local currentPosition, lastPosition
 
 local LODSystem = {}	
 LODSystem.CELL_SIZE = 50 -- Size of each grid cell in studs
-LODSystem.LOD_RADIUS = 100 -- Distance for high LOD
-LODSystem.CHECK_INTERVAL = 0.2 -- How often to check player position
-LODSystem.TAG_NAME = "FarmObject" -- Tag for your models
+LODSystem.LOD_RADIUS = 100 
+LODSystem.CHECK_INTERVAL = 0.2
+LODSystem.TAG_NAME = "FarmObject"
 
 -- Grid data structures
 LODSystem.grid = {} -- [cellKey] = {model1, model2, ...}
