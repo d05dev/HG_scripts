@@ -188,7 +188,7 @@ local function swapModelVisuals(plantModel, toHighPoly)
 			warn("TargetCropName was nil for crop " .. cropName) 
 			isSwapping = false
 			return false 
-    end
+    	end
 		
 		local newCropModel = sourceCropFolder:WaitForChild(cropName, 3):WaitForChild(targetCropName, 3)
 		
@@ -384,6 +384,7 @@ local function start()
 			local processed = 0
 			for i = #swapQueue, 1, -1 do
 				if processed >= MAX_SWAPS_PER_FRAME then break end
+					
 				local job = table.remove(swapQueue, i)
 				if job and job.model then
 					swapModelVisuals(job.model, job.toHighPoly)
